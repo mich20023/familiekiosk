@@ -1,0 +1,48 @@
+
+# the token of your bot obtained from Telegram
+TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+# the password required to listen to the chatgroup
+PASSWORD = "FK_TEST"
+
+MAX_JPG = 20       # how many recent pics to show at alarm time ? 
+SHOW_JPG_SEC = 20  # how many seconds to show an image
+MAX_VID = 20       # how many recent videos to show at alarm time ? 
+MAX_AUD = 20       # how many recent voice clips to show at alarm time ? 
+
+# At what time should most recent messages be shown? This lasts 30min
+ALARM_HOUR = 18
+ALARM_MIN = 0
+
+# do a one minute sound alarm? 
+ALARM_SET = True
+
+#send email of pictures you receive?
+SEND_EMAIL_OF_PICS = False
+
+#email of photoframe to send pics to
+EMAIL_FRAME = "YOUR_PIXSTAR_EMAIL@mypixstar.com"
+
+#to send mail we need to use smtp of google. Give here sending mail info 
+# note: required install: sudo apt-get install ssmtp 
+UserName = "YOUR_GMAIL_ACCOUNT@gmail.com"
+UserPassword = "YOUR_GMAIL_PASSWORD"
+SmptPort = 587  # google: 465
+SmptServer = 'smtp.gmail.com' #localhost' # google: 'smtp.gmail.com'
+
+# is a reply button connected to the TVbox ?
+REPLY_BUTTON = True
+REPLY_PIN = 18
+NEXT_BUTTON = True
+NEXT_PIN = 17
+PREV_BUTTON = True
+PREV_PIN = 23
+
+# is a button for an alarm connected? 
+BUZZER_PRESENT = True
+BUZZER_PIN = 24
+
+USE_EXTERNAL_VIDEO_PLAYER = True
+# add to /boot/config.txt   https://raspberrypi.stackexchange.com/questions/7716/omxplayer-doesnt-play-audio
+# # sufficient gpu to run omxplayer
+# gpu_mem=128
+EXTERNAL_VIDEO_PLAYER = 'omxplayer'
